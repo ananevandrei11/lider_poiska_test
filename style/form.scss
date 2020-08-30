@@ -1,0 +1,37 @@
+.form {
+
+  .width-group,
+  .height-group,
+  .material-group,
+  .name-group,
+  .mail-group,
+  .phone-group {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .warning {
+    visibility: hidden;
+    position: absolute;
+    top: 5.1rem;
+    left: 0rem;
+    font-size: 1.3rem;
+    color: $warningColor;
+  }
+
+  .succes {
+    visibility: hidden;
+    width: 1.84rem;
+    height: 1.4rem;
+    margin-left: 2.6rem;
+    background: url(./image/check_input.png) center / cover no-repeat;
+  }
+
+  .material {
+    .succes {
+      margin-left: 1.7rem;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.customer .name-input, .customer .mail-input, .customer .phone-input {
+  width: 31rem;
+}
+
+.customer .form-btn__send {
+  margin-left: 4rem;
+}
+
+.customer .order {
+  display: block;
+  max-width: 31rem;
+}
+/*# sourceMappingURL=customer.css.map */

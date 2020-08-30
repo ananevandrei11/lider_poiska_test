@@ -1,0 +1,21 @@
+.customer {
+    .name-input, .mail-input, .phone-input {
+        width: 31rem;
+    }
+    .form-btn__send {
+        margin-left: 4rem;
+    }
+
+    .order {
+        display: block;
+        max-width: 31rem;
+        visibility: hidden;
+        span {
+            text-transform: lowercase;
+            color: $attentionColor_1;
+            &:last-of-type {
+                color: $attentionColor_2;
+            }
+        }
+    }
+}

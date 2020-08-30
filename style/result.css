@@ -1,0 +1,22 @@
+.redirect__result {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.application__result {
+  height: 33rem;
+}
+
+.title__result {
+  max-width: 41.6rem;
+  margin-left: 3.8rem;
+}
+
+.title__result, .title__result span {
+  font-weight: bold;
+  font-size: 2.6rem;
+  line-height: 3.5rem;
+  text-align: center;
+}
+/*# sourceMappingURL=result.css.map */

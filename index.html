@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>j13.liderpoiska/size</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main id="application" class="application">
+    <h1 class="title">Заказать забор</h1>
+    <form id="size" class="form size" name="size">
+      <div class="form-item width">
+        <label for="width">Длина забора</label>
+        <div class="width-group">
+          <input class="width-input" type="text" name="width" id="width" maxlength="4" placeholder="0" required>
+          <span class="subtitle">&nbsp;метров</span>
+          <span class="warning">Неверно заполнено поле</span>
+          <span class="succes"></span>
+        </div>
+      </div>
+      <div class="form-item height">
+        <label for="height">Высота забора</label>
+        <div class="height-group">
+          <input class="height-input" type="text" name="height" id="height" maxlength="4" placeholder="0" required>
+          <span class="subtitle">&nbsp;метров</span>
+          <span class="warning">Неверно заполнено поле</span>
+          <span class="succes"></span>
+        </div>
+      </div>
+      <div class="form-item material">
+        <label for="material">Материал забора</label>
+        <div class="material-group">
+          <input class="material-input" type="text" name="material" id="material" placeholder="Выберите материал" readonly required>
+          <span class="succes"></span>
+          <div class="material-btn"></div>
+          <div class="material-options close">
+            <span class="material-item">Профнастил 400 Р за м²</span>
+            <span class="material-item">Модули 500 Р за м²</span>
+            <span class="material-item">Бетон 700 Р за м²</span>
+            <span class="material-item">Сетка 200 Р за м²</span>
+          </div>
+        </div>
+        
+      </div>
+      <div class="form-item mounting">
+        <input class="mounting-input" type="checkbox" name="mounting" id="mounting">
+        <label for="mounting">Нужен монтаж</label>
+      </div>
+      <div id="total" class="form-item total">
+        <strong>Сумма заказа:&nbsp;</strong>
+        <span id="sum">0</span>
+        <span>&nbsp;&#8381;</span>
+      </div>
+      <button class="form-btn form-btn__then" type="submit" disabled>
+        ДАЛЕЕ
+        <span></span>
+      </button>
+    </form>
+  </main>
+
+  <script src="./script/size.js"></script>
+</body>
+
+</html>

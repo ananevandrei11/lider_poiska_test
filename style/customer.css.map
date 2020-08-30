@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,SADK,CACL,WAAW,EADf,SAAS,CACQ,WAAW,EAD5B,SAAS,CACqB,YAAY,CAAC;EACnC,KAAK,EAAE,KAAK;CACf;;AAHL,AAII,SAJK,CAIL,eAAe,CAAC;EACZ,WAAW,EAAE,IAAI;CACpB;;AANL,AAQI,SARK,CAQL,MAAM,CAAC;EACH,OAAO,EAAE,KAAK;EACd,SAAS,EAAE,KAAK;CACnB",
+    "sources": [
+        "customer.scss"
+    ],
+    "names": [],
+    "file": "customer.css"
+}

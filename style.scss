@@ -1,0 +1,213 @@
+$textColor: #323232;
+$inputTextColor: #2E294E;
+$palceholderTextColor:#838383;
+$optionTextColor: #646464;
+$warningColor: #C98E99;
+$attentionColor_1: #458AE1;
+$attentionColor_2: #A10031;
+$btnTextColor: #ffffff;
+
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $textColor;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+body {
+  width: 100%;
+  min-height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("./image/bg.webp") 100% / cover no-repeat;
+  color: $textColor;
+}
+
+label {
+  width: max-content;
+  margin-bottom: 0.85rem;
+  cursor: pointer;
+}
+
+button, a {
+  cursor: pointer;
+  outline: none;
+}
+
+input {
+  height: 5rem;
+  background: linear-gradient(180deg, #F8F8F8 0%, rgba(243, 243, 243, 0) 100%, #F2F2F2 100%);
+  border: 1px solid #D7D7D7;
+  box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  padding-left: 1.5rem;
+  color: $textColor;
+  outline: none;
+
+  &::placeholder {
+    color: $palceholderTextColor;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    border-color: #4892EC;
+    color: $inputTextColor;
+  }
+}
+
+.application {
+  display: flex;
+  flex-direction: column;
+  width: 49rem;
+  height: 64.5rem;
+  background-color: #ffffff;
+}
+
+.redirect {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 49rem;
+  height: 1.5rem;
+  margin-bottom: 1rem;
+  img {
+    width: 1.45rem;
+    height: 1rem;
+    object-fit: cover;
+  }
+  span {
+    margin-left: .7rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+  }
+}
+
+.title {
+  width: 100%;
+  margin-top: 3.9rem;
+  font-size: 3rem;
+  line-height: 4.1rem;
+  text-align: center;
+}
+
+.form {
+  min-width: 31.9rem;
+  margin-left: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &-item {
+    display: flex;
+    margin-top: 2.5rem;
+    flex-direction: column;
+  }
+
+  &-btn {
+    position: relative;
+    margin-top: 3rem;
+    height: 5rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(180deg, #4892EC 0%, #2F79D4 100%);
+    border: 0.1rem solid #226DC8;
+    border-radius: 0.3rem;
+    text-transform: uppercase;
+    color: $btnTextColor;
+
+    &:disabled {
+      background: linear-gradient(180deg, #818387 0%, #696B6F 100%);
+      border: none;
+    }
+
+    &:hover {
+      background: linear-gradient(0deg, #3E8FF2, #3E8FF2);
+      border: 0.1rem solid #3789EC;
+    }
+
+    &:active {
+      background: linear-gradient(0deg, #256FCA, #256FCA);
+    }
+  }
+
+  &-btn__then {
+    position: relative;
+    width: 11.5rem;
+
+    span {
+      position: absolute;
+      content: '';
+      width: 3.6rem;
+      height: 3.6rem;
+      top: 0.6rem;
+      left: 84.5%;
+      background: linear-gradient(135deg, #4892EC 0%, #2F79D4 100%);
+      border-top: 0.1rem solid #226DC8;
+      border-right: 0.1rem solid #226DC8;
+      border-radius: 0.3rem;
+      transform: rotate(45deg);
+    }
+
+    &:disabled {
+      span {
+        top: 0.7rem;
+        left: 84%;
+        background: linear-gradient(135deg, #818387 0%, #696B6F 100%);
+        border: none;
+      }
+    }
+
+    &:hover {
+      span {
+        top: 0.6rem;
+        left: 84.5%;
+        background: linear-gradient(0deg, #3E8FF2, #3E8FF2);
+        border-top: 0.1rem solid #3789EC;
+        border-right: 0.1rem solid #3789EC;
+      }
+    }
+
+    &:active {
+      span {
+        top: 0.6rem;
+        left: 84.5%;
+        background: linear-gradient(0deg, #256FCA, #256FCA);
+      }
+    }
+  }
+
+  &-btn__send {
+    width: 23rem;
+  }
+}
+
+@import "./style/form.scss";
+@import "./style/size.scss";
+@import "./style/customer.scss";
+@import "./style/result.scss";
+
+@media (max-width:495px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width:395px) {
+  html {
+    font-size: 6px;
+  }
+}

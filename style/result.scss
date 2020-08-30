@@ -1,0 +1,43 @@
+.redirect__result {
+    justify-content: flex-end;
+}
+
+.application__result {
+    height: 33rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.title__result {
+    max-width: 41.6rem;
+
+    span:first-of-type {
+        text-transform: capitalize;
+    }
+
+    span:last-of-type {
+        color: $attentionColor_1;
+    }
+}
+
+.title__result,
+.title__result span {
+    font-weight: bold;
+    font-size: 2.6rem;
+    line-height: 3.5rem;
+    text-align: center;
+}
+
+.message {
+    max-width: 40.2rem;
+    min-height: 14.4rem;
+    margin-top: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+    span {
+        color: $attentionColor_1;
+    }
+}
